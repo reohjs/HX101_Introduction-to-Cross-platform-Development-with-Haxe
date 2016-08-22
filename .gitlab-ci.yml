@@ -1,0 +1,9 @@
+before_script:
+  - apt-get update -qq && apt-get install -y -qq nodejs
+  - node --version
+  - npm --version
+  - npm install -g markdown-spellcheck
+
+spellcheck:
+  script:
+    - mdspell "**/*.md" --report --ignore-numbers
