@@ -54,6 +54,16 @@ Know the various performance optimization techniques we can utilize to fine tune
 
 Peek into the power of Haxe macros, which is the ultimate feature that allows us to write programs using programs.
 
+## The Teaching Team
+
+### Andy Li (instructor)
+
+Andy is a member of the Haxe Foundation. He maintains various aspects of the Haxe toolkit, including the software packages, continuous integration/deployment, the websites, the jQuery externs etc. He has over 6 years of Haxe programming experience , and he enjoys speaking about Haxe in conferences like [World-Wide Haxe (WWX)](http://wwx.silexlabs.org/2016/talks/andy-li.html), [Hong Kong Open Source Conference (HKOSCon)](http://2015.opensource.hk/agenda/topic/transcompiling-towards-the-freedom-of-programming-language-and-platform-choice/), and [PyCon HK](http://2015.pycon.hk/schedule/topics/haxe-a-statically-typed-language-that-compiles-to-python-and-more/).
+
+Andy obtained a Ph.D. in the School of Creative Media, City University of Hong Kong. His research interests fall in the field of mobile human-computer interface, interactivity, and augmented reality. During his Ph.D. study, he taught a number of bachelor degree courses about video games and interdisciplinary practices, and this was how he learned the joy of teaching.
+
+### more to come!
+
 ## FAQ
 
 ### What Haxe targets will be covered in the course?
