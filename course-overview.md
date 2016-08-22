@@ -6,7 +6,7 @@ This course will provide an overview of cross-platform development using Haxe, a
 
 ## Course Description
 
-Cross-platform development is becoming increasingly important in the industry due to platform fragmentations - web vs native, Android vs iOS, video consoles vs PC, etc. To develop for multiple platforms, we often need to employ multiple development stacks and implement the same features in multiple programming languages. This duplicated effort is boring and error-prone. Haxe brings different platforms together by being a modern, easy-to-learn, statically-typed language that compiles to several target languages including JavaScript, Java, C#, Python, C++, and more. It is simple for Haxe to interoperate with the target languages and let us master one or more development stacks easily.
+Cross-platform development is becoming increasingly important in the industry due to platform fragmentation - web vs native, Android vs iOS, video consoles vs PC, etc. To develop for multiple platforms, we often need to employ multiple development stacks and implement the same features in multiple programming languages. This duplicated effort is boring and error-prone. Haxe brings different platforms together by being a modern, easy-to-learn, statically-typed language that compiles to several target languages including JavaScript, Java, C#, Python, C++, and more. It is simple for Haxe to interoperate with the target languages and let us master one or more development stacks easily.
 
 In this course, we will learn Haxe programming as well as general best practices of cross-platform development. We will discover some important Haxe features (e.g. conditional compilation, inlining, externs) that make Haxe highly suitable for cross-platform development. We will also walk through some advanced features, like pattern-matching and compile-time macros, to highlight some benefits of using a modern high-level language to target a relatively traditional low-level language like Java and C++. By using these Haxe features and following best practices, we can abstract away platform differences while having run-time performance close to, or even better than, using the target languages directly.
 
@@ -80,9 +80,9 @@ This course is positioned as a beginner course, so it does not require too much 
 
 ### I'm a professional developer. Will the course be too boring for me?
 
-If you are proficient in a language other then Haxe, you will enjoy discovering Haxe and how it's different than the one you are using. Different languages gives you different solutions to a problem. By learning one more language, you will have one more tool, unless the language can compile to multiple targets - you will gain more than one tool ;)
+If you are proficient in a language other than Haxe, you will enjoy discovering Haxe and how it's different from the one you are using. Different languages gives you different solutions to a problem. By learning one more language, you will have one more tool, unless the language can compile to multiple targets - you will gain more than one tool ;)
 
-If you are already using Haxe, this course will be good refresher of the Haxe basics. You will also have a much solid understanding of how Haxe is designed to ace in cross-platform development. You are also invited to help other Haxe beginners by answering questions in the course discussion forum. We are sure you will learn something by teaching others!
+If you are already using Haxe, this course will be a good refresher of the Haxe basics. You will also have a much solid understanding of how Haxe is designed to ace in cross-platform development. You are also invited to help other Haxe beginners by answering questions in the course discussion forum. We are sure you will learn something by teaching others!
 
 ### What OS / IDE / text editor should I use?
 
