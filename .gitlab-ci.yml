@@ -5,7 +5,10 @@ gitbook:
   script:
     - npm install -g gitbook-cli
     - gitbook install
-    - gitbook build . public
+    - gitbook build
+  artifacts:
+    paths:
+    - _book
 
 spellcheck:
   stage: test
@@ -15,6 +18,8 @@ spellcheck:
 
 pages:
   stage: deploy
+  script:
+    - ln -s _book public
   artifacts:
     paths:
     - public
