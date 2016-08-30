@@ -1,12 +1,22 @@
 image: node:6.4.0
 
+gitbook:
+  stage: build
+  script:
+    - npm install -g gitbook-cli
+    - gitbook install
+    - gitbook build . public
+
 spellcheck:
+  stage: test
   script:
     - npm install -g markdown-spellcheck
     - mdspell "**/*.md" --report --ignore-numbers
 
-gitbook:
-  script:
-    - npm install -g gitbook-cli
-    - gitbook install
-    - gitbook build
+pages:
+  stage: deploy
+  artifacts:
+    paths:
+    - public
+  only:
+    - master
