@@ -4,3 +4,8 @@ spellcheck:
   script:
     - npm install -g markdown-spellcheck
     - mdspell "**/*.md" --report --ignore-numbers
+
+gitbook:
+  script:
+    - npm install -g gitbook-cli
+    - gitbook build
