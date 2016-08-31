@@ -13,7 +13,7 @@ After receiving the student's GitLab ID, the web server will:
 
  1. Use the GitLab API to fork the development repository using a Haxe course bot account. The forked student repository will be privately hosted in the GitLab group, https://gitlab.com/groups/HaxeFoundation_HX101_2016T1. It has to be private since the student will commit quiz answers and coding exercises into the repository.
 
- 2. Remove all branches except for the `master` branch in order to prevent leaking quiz answers and coding exercise test cases.
+ 2. Set the `student` branch as main branch and remove all other branches in order to prevent leaking quiz answers and coding exercise test cases.
 
  3. Commit a file that contains student's info.
 
@@ -36,11 +36,30 @@ which will trigger a CI build of the merge request set up in the student sign up
 
 The CI build will perform a number of things in separated stages (builds):
 
- 1. Check that the CI configuration is unmodified. Theoretically, any modification to the CI configuration will result in a merge conflict, but we will double check it is unmodified.
+ 1. Check that the CI configuration, `.gitlab-ci.yml`, is unmodified. Theoretically, adding a custom CI configuration will result in a merge conflict, but we will double check it is unmodified.
 
  2. Merge the `answers` branch, which contains quiz answers. Grade the quiz, and store the grading result as build artifacts. The answers are not possible to be displayed by the student since no student code is executed at this stage. The answers will not be carried over to the next stage.
 
- 3. Merge the `test` branch, which contains the coding exercise test cases. Grade the coding exercises by running the test cases, and store the grading result as build artifacts. The test cases may be leaked to the student, but we will display test failure details anyway so that's fine. Just make sure it is not possible for the student to change the test cases.
+ 3. Compile the coding exercise. Save the compilation output as build artifacts. It is in a separated stage to make sure no macro can do funny things in the actual test stage.
 
- 4. Calculate the final grade, and store the grading result as build artifacts.
+ 4. Merge the `tests` branch, which contains the coding exercise test runner. Compile the test runner, and use it to grade the coding exercises. Store the grading result as build artifacts. The test cases may be leaked to the student, but we will display test failure details anyway so that's fine. We make sure it is not possible for the student to change the test cases by compiling the test runner before running the student's code.
 
+ 5. Calculate the final grade, and store the grading result as build artifacts. The calculation should make sure individual grades are valid, e.g. Total number of questions in a quiz is correct. Earned points is less than or equals to maximum points.
+
+## Publishing Contents
+
+Contents of each section is prepared in separated sub-folders in the `content` directory,
+committed in the `master` branch of the development repository.
+
+To publish a section, push the relevant section contents to each of `student`, `submission`, `answers`, and `tests` branches.
+A command line tool will be developed to smooth the process.
+
+Contents of each branches:
+
+ * `student` branch: Detached from `master` branch. Contains handouts, reading materials, quiz questions, and coding exercise instruction with templates. **No** `.gitlab-ci.yml` file.
+
+ * `submission` branch: Branched from `student`. Additionally contains `.gitlab-ci.yml` and CI related files.
+
+ * `answers` branch: Branched from `submission`. Additionally contains quiz answers.
+
+ * `tests` branch: Branched from `submission`. Additionally contains coding exercise test runner.
