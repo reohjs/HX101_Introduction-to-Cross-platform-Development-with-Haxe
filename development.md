@@ -11,9 +11,9 @@ It is a private repository. If you're interested in contributing to the course, 
 A student sign up for the course via the course web site by logging into GitLab.
 After receiving the student's GitLab ID, the web server will:
 
- 1. Use the GitLab API to fork the development repository using a Haxe course bot account. The forked student repository will be a privately hosted in the GitLab group, https://gitlab.com/groups/HaxeFoundation_HX101_2016T1. It has to be private since the student will commit quiz answers and coding exercises into the repository.
+ 1. Use the GitLab API to fork the development repository using a Haxe course bot account. The forked student repository will be privately hosted in the GitLab group, https://gitlab.com/groups/HaxeFoundation_HX101_2016T1. It has to be private since the student will commit quiz answers and coding exercises into the repository.
 
- 2. Remove all branches except for the master branch in order to prevent leaking quiz answers and coding exercise test cases.
+ 2. Remove all branches except for the `master` branch in order to prevent leaking quiz answers and coding exercise test cases.
 
  3. Commit a file that contains student's info.
 
