@@ -12,7 +12,7 @@ Before settling on hacking GitLab and GitBook for building online courses, we've
 
  * [Open edX](https://open.edx.org/) is initially what I planned to use. It is the software behind the popular MOOC web site [edX](https://www.edx.org/). Sadly, its code base is quite complicated and hard to deploy. We cannot find a free hosted Open edX provider either.
 
- * [Udemy](https://www.udemy.com/) is a online learning marketplace. It let users to create courses on their web site, and it handles all the hosting, registration, and stuff. However, it does not support the selling strategy we would like to use - offer courses for free and sell optional completion certificates.
+ * [Udemy](https://www.udemy.com/) is an online learning marketplace. It let users to create courses on their web site, and it handles all the hosting, registration, and stuff. However, it does not support the selling strategy we would like to use - offer courses for free and sell optional completion certificates.
 
  * [Moodle](https://moodle.org/) is an open source software that can run online courses. It is again quite a complex platform, so it would take some effort to customize for our need. It is easier to set up than Open edX though.
 
@@ -29,7 +29,7 @@ After receiving the student's GitLab ID, the web server will:
 
  2. Set the `student` branch as main branch and remove all other branches in order to prevent leaking quiz answers and coding exercise test cases.
 
- 3. Commit a file that contains student's info.
+ 3. Commit a file that contains student's registration info, including name and email. They will be used for contact and generating certificates. Since both the development and student repositories are private, only the student and the teaching team will have access to the info.
 
  4. Make a merge request to the `submission` branch in the development repository.
 
