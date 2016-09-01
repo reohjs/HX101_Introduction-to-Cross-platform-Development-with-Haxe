@@ -31,7 +31,7 @@ After receiving the student's GitLab ID, the web server will:
 
  3. Commit a file that contains student's registration info, including name and email. They will be used for contact and generating certificates. Since both the development and student repositories are private, only the student and the teaching team will have access to the info.
 
- 4. Make a merge request to the `submission` branch in the development repository.
+ 4. Make a merge request to the `submission` branch of the development repository.
 
  5. Add the student as a member to the forked student repository.
 
@@ -44,7 +44,7 @@ She can start learning from section 1.
 
 At the end of section 1, the graded assignments of this course will be explained.
 Instruction will be given to the student to set up git and clone the repository to its computer.
-The repository contains quiz and coding exercises that student has to complete by committing the answers using git.
+The repository contains quiz and coding exercises that students have to complete by committing the answers using git.
 To submit the completed assignments, the student pushes to her student repository,
 which will trigger a CI build of the merge request set up in the student sign up stage.
 
