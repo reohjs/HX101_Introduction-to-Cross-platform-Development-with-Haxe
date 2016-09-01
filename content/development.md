@@ -16,7 +16,7 @@ Before settling on hacking GitLab and GitBook for building online courses, we've
 
  * [Moodle](https://moodle.org/) is an open source software that can run online courses. It is again quite a complex platform, so it would take some effort to customize for our need. It is easier to set up than Open edX though.
 
- * [Coursera](https://www.coursera.org/) and [Udacity](https://www.udacity.com/) are two popular MOOC web sites beside edX. They only allows their partner institutions and organizations to create courses on their platforms. We're probably still too small to join them, but hopefully we will be able to offer courses there in the future ;)
+ * [Coursera](https://www.coursera.org/) and [Udacity](https://www.udacity.com/) are two popular MOOC web sites beside edX. They only allow their partner institutions and organizations to create courses on their platforms. We're probably still too small to join them, but hopefully we will be able to offer courses there in the future ;)
 
 The best thing about using GitLab and GitBook is that we can use the familiar git workflow and automatically obtain content modification history, team management, coding exercise grading etc. Students can also get an off-line copy of the whole course by cloning their student repository.
 
