@@ -6,6 +6,20 @@ The course website and most textual materials are written in Markdown, turned in
 The development repository is located at https://gitlab.com/HaxeFoundation/HX101_Introduction-to-Cross-platform-Developemnt-with-Haxe.
 It is a private repository. If you're interested in contributing to the course, contact Andy (andy@onthewings.net).
 
+## Platform Choice
+
+Before settling on hacking GitLab and GitBook for building online courses, we've looked into several alternative platforms:
+
+ * [Open edX](https://open.edx.org/) is initially what I planned to use. It is the software behind the popular MOOC web site [edX](https://www.edx.org/). Sadly, its code base is quite complicated and hard to deploy. We cannot find a free hosted Open edX provider either.
+
+ * [Udemy](https://www.udemy.com/) is a online learning marketplace. It let users to create courses on their web site, and it handles all the hosting, registration, and stuff. However, it does not support the selling strategy we would like to use - offer courses for free and sell optional completion certificates.
+
+ * [Moodle](https://moodle.org/) is an open source software that can run online courses. It is again quite a complex platform, so it would take some effort to customize for our need. It is easier to set up than Open edX though.
+
+ * [Coursera](https://www.coursera.org/) and [Udacity](https://www.udacity.com/) are two popular MOOC web sites beside edX. They only allows their partner institutions and organizations to create courses on their platforms. We're probably still too small to join them, but hopefully we will be able to offer courses there in the future ;)
+
+The best thing about using GitLab and GitBook is that we can use the familiar git workflow and automatically obtain content modification history, team management, coding exercise grading etc. Students can also get an off-line copy of the whole course by cloning their student repository.
+
 ## Student Sign Up
 
 A student sign up for the course via the course web site by logging into GitLab.
