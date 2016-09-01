@@ -19,11 +19,11 @@ After receiving the student's GitLab ID, the web server will:
 
  4. Make a merge request to the `submission` branch in the development repository.
 
- 5. Add the user as a member to the forked student repository.
+ 5. Add the student as a member to the forked student repository.
 
  6. Display a page of welcoming new student.
 
-After the sign up procedure, the student gain access to the course material in the course web site.
+After signing up, the student will gain access to the course material in the course web site.
 She can start learning from section 1.
 
 ## Graded Assignments
