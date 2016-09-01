@@ -93,3 +93,7 @@ Haxe itself is cross-platform - you can use it on Windows, Mac OS X, or Linux. F
 You can complete this course and access all the course materials for free.
 
 Optionally, you can obtain a **completion certificate** signed by the course instructor and be recognized by the Haxe Foundation for a fee that is well worth. More info coming soon.
+
+### How the course is built? Can I contribute?
+
+The course is built with using a combination of Git, GitLab, GitBook, and YouTube. Contribution is of course welcome! Take a look at the [Development Info](development.md).

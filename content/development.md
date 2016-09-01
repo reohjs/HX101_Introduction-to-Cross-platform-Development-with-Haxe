@@ -1,4 +1,4 @@
-# Development Guide
+# Development Info
 
 The course is built using a combination of Git, GitLab, GitBook, and YouTube.
 The course website and most textual materials are written in Markdown, turned into HTML using GitBook.
