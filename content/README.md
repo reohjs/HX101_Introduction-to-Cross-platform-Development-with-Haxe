@@ -86,7 +86,7 @@ If you are already using Haxe, this course will be a good refresher of the Haxe 
 
 ### What OS / IDE / text editor should I use?
 
-Haxe itself is cross-platform - you can use it on Windows, Mac OS X, or Linux. For IDE / text editor, we will cover setting up [HaxeDevelop](http://haxedevelop.org/) and [Visual Studio Code](https://code.visualstudio.com/) with [Haxe support](https://marketplace.visualstudio.com/items?itemName=nadako.vshaxe). You may also try [the other ones list in the Haxe website](https://haxe.org/documentation/introduction/editors-and-ides.html).
+Haxe itself is cross-platform - you can use it on Windows, Mac OS X, or Linux. For IDE / text editor, we will cover setting up [HaxeDevelop](http://haxedevelop.org/) and [Visual Studio Code](https://code.visualstudio.com/) with [Haxe support](https://marketplace.visualstudio.com/items?itemName=nadako.vshaxe). You may also try [the other ones listed in the Haxe website](https://haxe.org/documentation/introduction/editors-and-ides.html).
 
 ### How much will the course cost?
 
