@@ -20,7 +20,7 @@ pages:
   stage: deploy
   script:
     - cp -r _book public
-    - cp -r letsencrypt/ public
+    - cp -r letsencrypt/. public
   artifacts:
     paths:
     - public
