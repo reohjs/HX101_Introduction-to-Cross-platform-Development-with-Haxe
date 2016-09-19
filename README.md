@@ -1,6 +1,6 @@
 # HX101 Introduction to Cross-platform Development with Haxe
 
-This is the course material repository that contains [course info](course-overview.md), learning materials, assignments, and the course website. 
+This is the course material repository that contains [course info](content/README.md), learning materials, assignments, and the course website. 
 
 The course is offered by the [Haxe Foundation](https://haxe.org/foundation/).
 
