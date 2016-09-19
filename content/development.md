@@ -3,7 +3,7 @@
 The course is built using a combination of Git, GitLab, GitBook, and YouTube.
 The course website and most textual materials are written in Markdown, turned into HTML using GitBook.
 
-The development repository is located at https://gitlab.com/HaxeFoundation/HX101_Introduction-to-Cross-platform-Developemnt-with-Haxe.
+The development repository is located at https://gitlab.com/HaxeFoundation/HX101_Introduction-to-Cross-platform-Development-with-Haxe.
 It is a private repository. If you're interested in contributing to the course, contact Andy (andy@onthewings.net).
 
 ## Platform Choice
