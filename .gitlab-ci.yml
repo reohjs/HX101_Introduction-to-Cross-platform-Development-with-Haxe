@@ -32,7 +32,7 @@ github_mirror:
   script:
     - git config user.name "${GH_BOT_NAME}"
     - git config user.email "${GH_BOT_EMAIL}"
-    - git push --force --quiet "https://${GH_BOT_TOKEN}@github.com/HaxeFoundation/HX101_Introduction-to-Cross-platform-Developemnt-with-Haxe.git" "${CI_BUILD_REF_NAME}:${CI_BUILD_REF_NAME}"
+    - git push --force --quiet "https://${GH_BOT_TOKEN}@github.com/HaxeFoundation/HX101_Introduction-to-Cross-platform-Development-with-Haxe.git" "${CI_BUILD_REF_NAME}:${CI_BUILD_REF_NAME}"
   only:
     - master
     - student
